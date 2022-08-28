@@ -66,7 +66,7 @@ function Navbar() {
           >
             {logo_txt}
           </motion.a>
-          <div
+          {/* <div
             className="hamburger hamburger--collapse-r navbar-toggler"
             style={{ verticalAlign: "middle" }}
             onClick={MenuClick}
@@ -81,7 +81,18 @@ function Navbar() {
             >
               <div class="hamburger-inner"></div>
             </div>
-          </div>
+          </div> */}
+           <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent-333"
+              aria-controls="navbarSupportedContent-333"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
           <div
             className="collapse navbar-collapse"
             id="navbarSupportedContent-333"
