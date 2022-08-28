@@ -1,0 +1,13 @@
+.view {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../Assets/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+.header_txt {
+  font-family: "Passion One", cursive;
+  font-size: 70px;
+}
