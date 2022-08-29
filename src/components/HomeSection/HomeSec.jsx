@@ -26,7 +26,7 @@ function HomeSec() {
   return (
     <div>
       <header>
-        <div className="view">
+        <div className="view main_div">
           <div className="mask">
             <div className="container h-100">
               <div className="row align-items-center h-100">
@@ -47,8 +47,8 @@ function HomeSec() {
                       boxShadow: "0px 0px 8px rgb(255,255,255)",
                     }}
                     type="button"
-                    className="btn btn-success btn-md"
-                    style={{borderRadius:"30px", backgroundColor:"rgb(5, 115, 119)", marginLeft:"0px"}}
+                    className="btn btn-md"
+                    style={{borderRadius:"30px", backgroundColor:"darkcyan", color:"white", marginLeft:"0px"}}
                   >
                     Contact
                   </motion.button>

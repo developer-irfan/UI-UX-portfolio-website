@@ -49,7 +49,7 @@ function Navbar() {
       <nav
         className={
           navbar
-            ? "mb-0 navbar  navbar-expand-lg navbar-dark deep-purple darken-4 fixed-top scrolling-navbar  blue-text pt-4 pb-4 z-depth-0"
+            ? "mb-0 navbar scrollable navbar-expand-lg navbar-dark fixed-top scrolling-navbar blue-text pt-4 pb-4 z-depth-0"
             : "mb-0 navbar navbar-expand-lg navbar-dark  darken-3 fixed-top scrolling-navbar  blue-text pt-4 pb-4 z-depth-0"
         }
         id="navmain"
