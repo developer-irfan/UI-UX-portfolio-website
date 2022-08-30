@@ -38,10 +38,6 @@ const Services = () => {
       }, [inView]);
 
 
-
-
-
-
   //return statement
   return (
     <div ref={ref}>
@@ -61,13 +57,13 @@ const Services = () => {
             />
           </h2>
 
-          <p className="lead text-muted text-center mx-auto w-responsive services_des">
+          <p className="lead text-muted mx-auto w-responsive services_des">
             In today’s digital age, every touch point, impression, and branded
             interaction contribute an inspiring user experience. At Royal Cyber,
             we help you navigate the complexity of designing and improving your
             user experience. With our complete line UX services and our zero
             investment UX audit, we’ll help you design a UX strategy that best
-            fits your business goals.
+            fits your business goals and improve your UI productivity.
           </p>
 
           <motion.div

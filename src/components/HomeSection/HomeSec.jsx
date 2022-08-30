@@ -35,8 +35,7 @@ function HomeSec() {
                    I am Sameeullah
                   </h1>
                   <h4
-                    className="mb-3 pb-2 white-text"
-                    style={{ wordSpacing: "4px", fontSize:"35px" }}
+                    className="mb-3 pb-2 white-text header_des_txt"
                   >
                    I am UI/UX Designer
                   </h4>

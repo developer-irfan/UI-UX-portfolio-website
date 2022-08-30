@@ -20,7 +20,19 @@
   }
   @media (max-width:740px) {
     .about_img{
-        width:370px;
-        height:400px;
+        width:350px;
+        height:270px;
+    }
+    .same_txt{
+        margin-top: 60px;
     }
   }
+  @media (max-width:740px) {
+    .sami_txt{
+        display: inline-block;
+        padding-top: 20px;
+    }
+  }
+
+
+  

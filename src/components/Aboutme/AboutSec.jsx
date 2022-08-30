@@ -68,7 +68,7 @@ function AboutSec() {
             </h3>
 
             <p className="font-weight-bold white-text mb-4 about_heading_txt">
-              Hello There, I am <span className="name_span">Sameeullah</span>
+              Hello There, I am <span className="name_span sami_txt">Sameeullah</span>
             </p>
 
             <p className="text-muted about_description">

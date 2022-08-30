@@ -11,3 +11,16 @@
   font-family: "Passion One", cursive;
   font-size: 70px;
 }
+
+.header_des_txt{
+  font-size: 35px;
+  word-spacing: 4px;
+  
+}
+
+@media (max-width: 740px) {
+  .header_des_txt{
+    font-size:25px;
+    font-weight: bold;
+  }
+}
