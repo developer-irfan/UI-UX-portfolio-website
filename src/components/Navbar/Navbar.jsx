@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import {HashLink as Link} from "react-router-hash-link";
 
 //motion import
 import { motion } from "framer-motion";
@@ -99,40 +100,41 @@ function Navbar() {
           >
             <ul className="navbar-nav m-auto chk">
               <li className="nav-item ">
-                <a exact="true" href="/" className="nav-link  home">
+                <Link exact="true" to="#home" smooth className="nav-link  home">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item  pl-xl-4 pl-lg-4">
-                <a exact="true" href="/about" className="nav-link about">
+                <Link exact="true" to="#aboutme" smooth className="nav-link about">
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item pl-xl-4 pl-lg-4">
-                <a exact="true" href="/team" className="nav-link  news">
+                <Link exact="true" to="#services" smooth className="nav-link  news">
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item pl-xl-4 pl-lg-4">
-                <a exact="true" href="/contact" className="nav-link  contact">
+                <Link exact="true" to="#portfolio" smooth className="nav-link  contact">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className="nav-item pl-xl-4 pl-lg-4">
-                <a exact="true" href="/contact" className="nav-link  contact">
+                <Link exact="true" to="#blogs" smooth className="nav-link  contact">
                   Blog
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item pl-xl-4 pl-lg-4">
-                <a
+                <Link
                   exact="true"
-                  href="/join"
+                  to="#contact"
+                  smooth
                   className="nav-link   signup"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

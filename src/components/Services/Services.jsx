@@ -40,8 +40,8 @@ const Services = () => {
 
   //return statement
   return (
-    <div ref={ref}>
-      <div className="container-fluid p-5 z-depth-1 service_div">
+    <div ref={ref} id="services">
+      <div className="container-fluid p-5 service_div">
         <section className="text-center white-text">
           <h2 className="font-weight-bold mb-4 pb-2 text-uppercase">
             Services
@@ -280,7 +280,6 @@ const Services = () => {
                     in a web browser, to deliver a complete usable product UI
                     development is imperative.
                   </p>
-                  <br />
                   <br />
                 </div>
               </div>

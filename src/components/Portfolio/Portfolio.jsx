@@ -1,9 +1,51 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Portfolio.css";
 
+//images of portfolio
+import img1 from "../../Assets/p1.jpg";
+import img2 from "../../Assets/p2.jpg";
+import img3 from "../../Assets/p3.jpg";
+import img4 from "../../Assets/p4.jpg";
+import img5 from "../../Assets/p5.jpg";
+import img6 from "../../Assets/p6.jpg";
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 function Portfolio() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation_left = useAnimation();
+  const animation_right = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation_left.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 130,
+          bounce: 0.3,
+        },
+      });
+      animation_right.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 130,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation_left.start({ x: "-20vw" });
+      animation_right.start({ x: "20vw" });
+    }
+  }, [inView]);
+
   return (
-    <div className="portfolio_div">
+    <div ref={ref} className="portfolio_div" id="portfolio">
       <div className="container p-5 z-depth-1 bg-dark container_div">
         <section className="text-center white-text">
           <h2 className="font-weight-bold mb-4 pb-2 text-uppercase">
@@ -40,12 +82,10 @@ function Portfolio() {
             <div
               className="modal-dialog modal-lg modal-dialog-centered"
               role="document"
-            >
-        
-            </div>
+            ></div>
           </div>
 
-          <div className="row mt-5">
+          <motion.div animate={animation_left} className="row mt-5">
             <div className="col-12">
               <ul
                 className="nav md-pills flex-center flex-wrap mx-0"
@@ -68,7 +108,7 @@ function Portfolio() {
                     href="#panel32"
                     role="tab"
                   >
-                    Web 
+                    Web
                   </a>
                 </li>
                 <li className="nav-item">
@@ -78,12 +118,12 @@ function Portfolio() {
                     href="#panel33"
                     role="tab"
                   >
-                    UI 
+                    UI
                   </a>
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
 
           <div className="tab-content mb-5 mt-5">
             <div
@@ -91,7 +131,7 @@ function Portfolio() {
               id="panel31"
               role="tabpanel"
             >
-              <div className="row">
+              <motion.div animate={animation_left}  className="row">
                 <div className="col-md-12 col-lg-4">
                   <a
                     className="bg-dark card hoverable mb-4"
@@ -100,14 +140,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img3.jpg"
+                      src={img1}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Phone Bag</h5>
-                      <p className="card-text text-uppercase mb-3">Bag, Box</p>
-                    </div>
                   </a>
 
                   <a
@@ -116,15 +151,10 @@ function Portfolio() {
                     data-target="#basicExampleModal"
                   >
                     <img
-                      className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img9.jpg"
+                      className="bg-dark card-img-top"
+                      src={img2}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Paper Bag</h5>
-                      <p className="card-text text-uppercase mb-3">Bag</p>
-                    </div>
                   </a>
                 </div>
 
@@ -136,14 +166,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src=" https://mdbootstrap.com/img/Photos/Others/img4.jpg"
+                      src={img3}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Book</h5>
-                      <p className="card-text text-uppercase mb-3">Book</p>
-                    </div>
                   </a>
 
                   <a
@@ -153,14 +178,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img5.jpg"
+                      src={img4}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Notes</h5>
-                      <p className="card-text text-uppercase mb-3">Note</p>
-                    </div>
                   </a>
                 </div>
 
@@ -172,14 +192,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src=" https://mdbootstrap.com/img/Photos/Others/img10.jpg"
+                      src={img5}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">T-shirt</h5>
-                      <p className="card-text text-uppercase mb-3">Box</p>
-                    </div>
                   </a>
 
                   <a
@@ -189,17 +204,12 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img8.jpg"
+                      src={img6}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Magazine</h5>
-                      <p className="card-text text-uppercase mb-3">Book</p>
-                    </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="tab-pane fade" id="panel32" role="tabpanel">
@@ -212,14 +222,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img9.jpg"
+                      src={img1}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Paper Bag</h5>
-                      <p className="card-text text-uppercase mb-3">Bag</p>
-                    </div>
                   </a>
                 </div>
 
@@ -231,14 +236,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src=" https://mdbootstrap.com/img/Photos/Others/img4.jpg"
+                      src={img1}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Book</h5>
-                      <p className="card-text text-uppercase mb-3">Book</p>
-                    </div>
                   </a>
                 </div>
 
@@ -250,14 +250,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img8.jpg"
+                      src={img2}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Magazine</h5>
-                      <p className="card-text text-uppercase mb-3">Book</p>
-                    </div>
                   </a>
                 </div>
               </div>
@@ -273,14 +268,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img3.jpg"
+                      src={img3}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Phone Bag</h5>
-                      <p className="card-text text-uppercase mb-3">Bag, Box</p>
-                    </div>
                   </div>
                 </div>
 
@@ -292,14 +282,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src="https://mdbootstrap.com/img/Photos/Others/img5.jpg"
+                      src={img4}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">Notes</h5>
-                      <p className="card-text text-uppercase mb-3">Note</p>
-                    </div>
                   </a>
                 </div>
 
@@ -311,14 +296,9 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src=" https://mdbootstrap.com/img/Photos/Others/img10.jpg"
+                      src={img5}
                       alt="Card image cap"
                     />
-
-                    <div className="card-body">
-                      <h5 className="my-3">T-shirt</h5>
-                      <p className="card-text text-uppercase mb-3">Box</p>
-                    </div>
                   </a>
                 </div>
               </div>

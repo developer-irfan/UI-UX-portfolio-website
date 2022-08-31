@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./HomeSec.css";
 import { motion } from "framer-motion";
 import WOW from "wowjs";
-
+import {HashLink as Link} from "react-router-hash-link";
 
 //header section button transition
 const header_btn_transition = {
@@ -26,7 +26,7 @@ function HomeSec() {
   return (
     <div>
       <header>
-        <div className="view main_div">
+        <div className="view main_div" id="home">
           <div className="mask">
             <div className="container h-100">
               <div className="row align-items-center h-100">

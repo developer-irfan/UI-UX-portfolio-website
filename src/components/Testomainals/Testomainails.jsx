@@ -1,5 +1,6 @@
 import React from "react";
 import "./Testomainals.css";
+import irfan_img from "../../Assets/irfan.png"
 
 function Testomainails() {
   return (
@@ -33,10 +34,10 @@ function Testomainails() {
             className="row mx-0"
             style={{ justifyContent: "center", marginTop: "50px" }}
           >
-            <div className="col-lg-3 col-md-12 mb-4 pr-0">
+            <div className="col-lg-4 col-md-12 mb-4 pr-0">
               <div className="bg-dark card z-depth-3">
                 <div className="view overlay my-4">
-                  <div class="orange-text">
+                  <div class="" style={{ color: "darkcyan" }}>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star"> </i>
@@ -54,23 +55,42 @@ function Testomainails() {
                     interface web design, this one dealing with user behavior
                     and feeling when using the site or app.
                   </p>
+                  <div class="avatar d-flex align-items-center pl-3">
+                    <img
+                      src={irfan_img}
+                      style={{ maxWidth: "50px" }}
+                      class="rounded-circle z-depth-1"
+                      alt="woman avatar"
+                    />
+                    <h6
+                      class="font-weight-bold  pl-2"
+                      style={{ color: "darkgray" }}
+                    >
+                      Irfan Bangash
+                    </h6>
+                  </div>
+                  <p
+                    class="font-weight-bold text-muted"
+                    style={{ fontSize: "13px", marginTop: "-17px" }}
+                  >
+                   MERN Developer
+                  </p>
+
                   <br />
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-12 mb-4 pr-0">
+            <div className="col-lg-4 col-md-12 mb-4 pr-0">
               <div className="bg-dark card z-depth-3">
                 <div className="view overlay my-4">
-                <div className="view overlay my-4">
-                  <div class="orange-text">
+                  <div class="" style={{ color: "darkcyan" }}>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star"> </i>
                     <i class="fas fa-star-half-alt"> </i>
                   </div>
-                </div>
                 </div>
 
                 <div className="card-body">
@@ -78,45 +98,32 @@ function Testomainails() {
                     className="card-text text-center"
                     style={{ fontSize: "12px", color: "darkgray" }}
                   >
-                    It is interaction between end user, users and products and
-                    creating products that enable the users to achieve their
-                    objective(s) in the best way possible.
+                    User Experience (UX) — Another specialization of UI, user
+                    interface web design, this one dealing with user behavior
+                    and feeling when using the site or app.
                   </p>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-12 mb-4 pr-0 ">
-              <div className="bg-dark card z-depth-3">
-                <div className="view overlay my-4">
-                <div className="view overlay my-4">
-                  <div class="orange-text">
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star"> </i>
-                    <i class="fas fa-star-half-alt"> </i>
+                  <div class="avatar d-flex align-items-center pl-3">
+                    <img
+                      src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
+                      style={{ maxWidth: "50px" }}
+                      class="rounded-circle z-depth-1"
+                      alt="woman avatar"
+                    />
+                    <h6
+                      class="font-weight-bold  pl-2"
+                      style={{ color: "darkgray" }}
+                    >
+                      ZaiUllah
+                    </h6>
                   </div>
-                </div>
-                </div>
-
-                <div className="card-body">
-
                   <p
-                    className="card-text text-center"
-                    style={{
-                      fontSize: "12px",
-                      color: "darkgray",
-                      textAlign: "justify",
-                    }}
+                    class="font-weight-bold text-muted"
+                    style={{ fontSize: "13px", marginTop: "-17px" }}
                   >
-                    Understanding the users, their needs & identifying
-                    requirements of product using the right UX research
-                    technique at the right time in the product development
-                    process.
+                    Designer
                   </p>
-                 
+
+                  <br />
                 </div>
               </div>
             </div>
