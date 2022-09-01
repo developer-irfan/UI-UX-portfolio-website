@@ -5,8 +5,10 @@ function Contact() {
   return (
     <div className="contact_div">
       <div className="container">
-        <section className="dark-grey-text text-center" >
-          <h2 className="font-weight-bold  pb-2 pt-5 white-text" id="contact">Get In Touch</h2>
+        <section className="dark-grey-text text-center">
+          <h2 className="font-weight-bold  pb-2 pt-5 white-text" id="contact">
+            Get In Touch
+          </h2>
           <hr
             color="white"
             width="135px"
@@ -38,7 +40,10 @@ function Contact() {
             </div>
 
             <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <i className="fas fa-phone fa-2x" style={{ color: "darkcyan" }}></i>
+              <i
+                className="fas fa-phone fa-2x"
+                style={{ color: "darkcyan" }}
+              ></i>
 
               <p className="font-weight-bold my-3">Phone number</p>
 
@@ -63,13 +68,18 @@ function Contact() {
 
           <div className="container my-5 px-0">
             <section className="p-5 my-md-5 text-center">
-              <form className="mb-5 mx-md-5" action="">
+              <form
+                action="mailto:muhammadirfan9273@gmail.com"
+                method="post"
+                enctype="text/plain"
+                className="mb-5 mx-md-5"
+              >
                 <div className="container row">
                   <div className="col-md-6 mb-4">
                     <input
                       type="text"
                       id="name"
-                      className="form-control bg-dark"
+                      className="form-control bg-dark grey-text"
                       placeholder="Full Name"
                       style={{ border: "none" }}
                     />
@@ -78,7 +88,7 @@ function Contact() {
                     <input
                       type="email"
                       id="email"
-                      className="form-control bg-dark"
+                      className="form-control bg-dark grey-text"
                       placeholder="Your Email"
                       style={{ border: "none" }}
                     />
@@ -89,7 +99,7 @@ function Contact() {
                   <div className="col-md-12">
                     <div className="form-group mb-4">
                       <textarea
-                        className="form-control rounded bg-dark"
+                        className="form-control rounded bg-dark grey-text"
                         id="message"
                         rows="3"
                         placeholder="How can we help?"

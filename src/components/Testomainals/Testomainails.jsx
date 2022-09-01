@@ -69,12 +69,6 @@ function Testomainails() {
                       Irfan Bangash
                     </h6>
                   </div>
-                  <p
-                    class="font-weight-bold text-muted"
-                    style={{ fontSize: "13px", marginTop: "-17px" }}
-                  >
-                   MERN Developer
-                  </p>
 
                   <br />
                 </div>
@@ -116,12 +110,6 @@ function Testomainails() {
                       ZaiUllah
                     </h6>
                   </div>
-                  <p
-                    class="font-weight-bold text-muted"
-                    style={{ fontSize: "13px", marginTop: "-17px" }}
-                  >
-                    Designer
-                  </p>
 
                   <br />
                 </div>
