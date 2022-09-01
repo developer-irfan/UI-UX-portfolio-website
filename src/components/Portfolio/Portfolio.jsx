@@ -85,7 +85,7 @@ function Portfolio() {
             ></div>
           </div>
 
-          <motion.div animate={animation_left} className="row mt-5">
+          <motion.div  className="row mt-5">
             <div className="col-12">
               <ul
                 className="nav md-pills flex-center flex-wrap mx-0"
