@@ -131,7 +131,7 @@ function Portfolio() {
               id="panel31"
               role="tabpanel"
             >
-              <motion.div animate={animation_left}  className="row">
+              <motion.div  className="row">
                 <div className="col-md-12 col-lg-4">
                   <a
                     className="bg-dark card hoverable mb-4"
