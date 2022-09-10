@@ -3,7 +3,7 @@ import About_Pic from "../../Assets/header_img.png";
 import "./About.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import cv from "../../Assets/irfan.png";
+import cv from "../../Assets/sameeullah_cv.pdf";
 
 //main function
 function AboutSec() {
