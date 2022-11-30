@@ -1,13 +1,21 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Portfolio.css";
 
 //images of portfolio
-import img1 from "../../Assets/p1.jpg";
-import img2 from "../../Assets/p2.jpg";
-import img3 from "../../Assets/p3.jpg";
 import img4 from "../../Assets/p4.jpg";
-import img5 from "../../Assets/p5.jpg";
-import img6 from "../../Assets/p6.jpg";
+
+//portfolio images
+import imga from "../../Assets/assets/Untitled/Untitled-1.png";
+import imgb from "../../Assets/assets/Untitled/Untitled-2.png";
+import imgc from "../../Assets/assets/Untitled/Untitled-3.png";
+import imge from "../../Assets/assets/Travel-1,Travel-2,Travel-3/Travel-2.png";
+import imgg from "../../Assets/assets/grocery_app/sign_up.jpg";
+import imgh from "../../Assets/assets/grocery_app/Home-1.jpg";
+import imgi from "../../Assets/assets/grocery_app/profile.jpg";
+import imgj from "../../Assets/assets/grocery_app/home.jpg";
+import imgk from "../../Assets/assets/grocery_app/Fruit.jpg";
+import imgl from "../../Assets/assets/grocery_app/category.jpg";
+import imgm from "../../Assets/assets/grocery_app/bags.jpg";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -49,7 +57,7 @@ function Portfolio() {
       <div className="container p-5 z-depth-1 bg-dark container_div">
         <section className="text-center white-text">
           <h2 className="font-weight-bold mb-4 pb-2 text-uppercase">
-            Portfolio
+            Screens I Designed
             <hr
               color="white"
               width="135px"
@@ -85,7 +93,7 @@ function Portfolio() {
             ></div>
           </div>
 
-          <motion.div  className="row mt-5">
+          <motion.div className="row mt-5">
             <div className="col-12">
               <ul
                 className="nav md-pills flex-center flex-wrap mx-0"
@@ -131,7 +139,7 @@ function Portfolio() {
               id="panel31"
               role="tabpanel"
             >
-              <motion.div  className="row">
+              <motion.div className="row">
                 <div className="col-md-12 col-lg-4">
                   <a
                     className="bg-dark card hoverable mb-4"
@@ -140,7 +148,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img1}
+                      src={imga}
                       alt="Card image cap"
                     />
                   </a>
@@ -152,7 +160,7 @@ function Portfolio() {
                   >
                     <img
                       className="bg-dark card-img-top"
-                      src={img2}
+                      src={imgb}
                       alt="Card image cap"
                     />
                   </a>
@@ -166,7 +174,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img3}
+                      src={imgc}
                       alt="Card image cap"
                     />
                   </a>
@@ -192,7 +200,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img5}
+                      src={imge}
                       alt="Card image cap"
                     />
                   </a>
@@ -204,7 +212,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img6}
+                      src={imgl}
                       alt="Card image cap"
                     />
                   </a>
@@ -222,7 +230,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img1}
+                      src={imgg}
                       alt="Card image cap"
                     />
                   </a>
@@ -236,7 +244,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img1}
+                      src={imgh}
                       alt="Card image cap"
                     />
                   </a>
@@ -250,7 +258,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img2}
+                      src={imgi}
                       alt="Card image cap"
                     />
                   </a>
@@ -268,7 +276,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img3}
+                      src={imgj}
                       alt="Card image cap"
                     />
                   </div>
@@ -282,7 +290,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img4}
+                      src={imgk}
                       alt="Card image cap"
                     />
                   </a>
@@ -296,7 +304,7 @@ function Portfolio() {
                   >
                     <img
                       className="card-img-top"
-                      src={img5}
+                      src={imgm}
                       alt="Card image cap"
                     />
                   </a>
